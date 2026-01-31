@@ -1,33 +1,41 @@
+<p align="center">
+    <img src="https://rugix.org/img/logo.svg" width="12%" alt="Rugix Logo">
+</p>
 <h1 align="center">
     Rugix Bakery
 </h1>
 <h4 align="center">
-    Flexible, user-friendly build system for bespoke embedded Linux distributions.
+    Build custom Linux distributions in days, not months.
 </h4>
 <p align="center">
   <a href="https://github.com/rugix/rugix-bakery/releases"><img alt="Rugix Bakery Version Badge" src="https://img.shields.io/github/v/tag/rugix/rugix-bakery?label=version"></a>
   <a href="https://github.com/rugix/rugix-bakery/actions"><img alt="Pipeline Status Badge" src="https://img.shields.io/github/actions/workflow/status/rugix/rugix-bakery/check-and-lint.yml"></a>
 </p>
 
-Rugix Bakery is part of the [Rugix](https://rugix.org) project, an open-source tool suite for building secure and reliable embedded Linux devices with efficient over-the-air update capabilities.
+Rugix Bakery is part of [Rugix](https://rugix.org), an open-source tool suite for building robust, Linux-powered products.
 
-You wrote your application and now need to integrate it into a full system ready to be flashed onto your device or deployed as an update? Rugix Bakery makes this process (almost) **as easy as writing a Dockerfile, enabling you to focus on what provides value to your users** instead of system-level details.
+Rugix Bakery makes building OTA-ready system images (almost) **as easy as writing a Dockerfile**. Spend your time on what provides value to your users, not system-level details and build pipeline complexity.
 
-- Build upon proven distributions such as **Debian and Alpine Linux**.
-- **Over-the-air update capabilities** powered by [Rugix Ctrl](https://github.com/rugix/rugix) out of the box.
-- Build everything **from source to image in a container-based environment**.
-- Define **multiple system variants**, including variants for testing.
-- Builtin **system testing framework** and **support for running VMs**.
+- **Supported Distributions**: Debian, Alpine Linux, and Raspberry Pi OS.
+- **OTA Updates**: Over-the-air update capabilities powered by [Rugix Ctrl](https://github.com/rugix/rugix) out of the box.
+- **Container-Based Builds**: Reproducible build environment from source to image.
+- **System Variants**: Support for multiple configurations including test setups.
+- **Integrated Testing**: Built-in system testing framework based on VMs.
+- **SBOM Generation**: Built-in SBOM generation for regulatory compliance.
 
-With Rugix Bakery, you get a **comprehensive tool to build, test, and run your system** similar to what you will find with modern software development tooling, like [Cargo](https://doc.rust-lang.org/cargo/) (Rust) or [uv](https://docs.astral.sh/uv/) (Python).
+With Rugix, you get a **comprehensive tool suite to build, test, and run your system** similar to what you will find with modern software development tooling, like [Cargo](https://doc.rust-lang.org/cargo/) (Rust) or [uv](https://docs.astral.sh/uv/) (Python).
 
-[**Get started today! Build your first system and deploy an update, all in under 30 minutes!**](https://rugix.org/docs/getting-started)
+[**Get started today! Build your first system and deploy an update, all in under 30 minutes!**](https://rugix.org/docs/getting-started) 🚀
 
 [For details, check out the documentation.](https://rugix.org/docs/bakery)
 
+## Using Rugix Ctrl with Other Build Systems
+
+Rugix Bakery is the easiest way to get started, but it's not the only option. If you already have a favorite build system or must use Yocto, you can integrate [Rugix Ctrl](https://github.com/rugix/rugix) directly using our [open-source Yocto layers](https://github.com/rugix/meta-rugix).
+
 ## ⚖️ Licensing
 
-This project is licensed under either [MIT](https://github.com/rugix/rugix/blob/main/LICENSE-MIT) or [Apache 2.0](https://github.com/rugix/rugix/blob/main/LICENSE-APACHE) at your opinion.
+This project is licensed under either [MIT](https://github.com/rugix/rugix-bakery/blob/main/LICENSE-MIT) or [Apache 2.0](https://github.com/rugix/rugix-bakery/blob/main/LICENSE-APACHE) at your option.
 
 Unless you explicitly state otherwise, any contribution intentionally submitted for inclusion in this project by you, as defined in the Apache 2.0 license, shall be dual licensed as above, without any additional terms or conditions.
 
