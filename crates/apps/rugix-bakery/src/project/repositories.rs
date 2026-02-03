@@ -14,7 +14,7 @@ use crate::config::repositories::{
     GitSourceConfig, PathSourceConfig, RepositoryConfig, SourceConfig,
 };
 use crate::utils::idx_vec::{new_idx_type, IdxVec};
-use crate::BakeryResult;
+use crate::{paths, BakeryResult};
 
 use super::ProjectRef;
 
@@ -31,7 +31,10 @@ impl ProjectRepositories {
         let mut repositories = RepositoriesLoader::new(project.dir());
         let core = repositories.load_source(
             SourceConfig::Path(PathSourceConfig {
-                path: "/usr/share/rugix/repositories/core".into(),
+                path: paths::repositories_dir()
+                    .join("core")
+                    .to_string_lossy()
+                    .into_owned(),
             }),
             false,
         )?;
